@@ -10,6 +10,17 @@ app.get('/', (req, res)=>{
 	res.sendFile(__dirname + '/public/index.html');
 })
 
+io.on('connection', socket => {
+	//console.log('a user connected');
+socket.on('pos', data =>{
+	//console.log("Nick:" + data.nick +"- msg: " + data.msg);
+	io.emit('res', data);
+})
+socket.on('disconnect', () => {
+	//console.log('user disconnected');
+  });
+});
+
 http.listen(port, ()=>{
 	console.log('Start server');
 })
