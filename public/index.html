@@ -7,18 +7,20 @@
 <h3>Hello, world!</h3>
 <p>This my first app Node js of Heroku</p>
 <script>
-		 var socket = io();
-		 var pl = {};
-		 pl.nick = prompt('name');
-		 console.log("Wellcome, " + pl.nick);
+	 var socket = io();
+	/*
+	//var pl = {};
+		 //pl.nick = prompt('name');
+		 //console.log("Wellcome, " + pl.nick);
 		 function play(){
 			pl.msg = document.getElementById('lvl').value;
 			if(pl == "") alert("error");
 			else socket.emit('pos', pl);
 		 }
 		 socket.on('res',data=>{
-			console.log(data.nick + ': ' + data.msg);
+			//console.log(data.nick + ': ' + data.msg);
 		 })
+	*/
 	</script>
 <input id='lvl' type='text' />-<label id='exp'></label><br>
 	<button onclick="play()">attack</button>
