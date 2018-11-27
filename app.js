@@ -21,6 +21,4 @@ socket.on('disconnect', () => {
   });
 });
 
-http.listen(port, ()=>{
-	console.log('Start server');
-})
+http.listen(port);
