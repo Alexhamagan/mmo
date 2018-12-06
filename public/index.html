@@ -8,10 +8,10 @@
 <p>This my first app Node js of Heroku</p>
 <script>
 	 var socket = io();
-	/*
-	//var pl = {};
-		 //pl.nick = prompt('name');
-		 //console.log("Wellcome, " + pl.nick);
+	
+	var pl = {};
+		 pl.nick = prompt('name');
+		 console.log("Wellcome, " + pl.nick);
 		 function play(){
 			pl.msg = document.getElementById('lvl').value;
 			if(pl == "") alert("error");
@@ -20,7 +20,6 @@
 		 socket.on('res',data=>{
 			//console.log(data.nick + ': ' + data.msg);
 		 })
-	*/
-	</script>
+</script>
 <input id='lvl' type='text' />-<label id='exp'></label><br>
 	<button onclick="play()">attack</button>
